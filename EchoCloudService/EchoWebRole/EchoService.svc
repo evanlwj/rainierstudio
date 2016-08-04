@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="EchoWebRole.Service1" CodeBehind="EchoService.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="EchoWebRole.EchoService" CodeBehind="EchoService.svc.cs" %>

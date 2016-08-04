@@ -3,7 +3,15 @@
   <Role name="EchoWebRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=rainierstudiostorage;AccountKey=XwhjBD6M/Q/rE7Gvp8dgrIylHwrjseOGGHEyuaZFXxwGGs37hBie0Ku0VvfIWe+i+mo2BdTq0OoYAaA9mxa3pQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="evanlwj" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEBQq5bsF0SqnQSluJGvi0pwwDQYJKoZIhvcNAQEBBQAEggEAPWYcJu+JALfxql94qQZ1ok79DG0jXXYl28isch1V4EBAaaFqOaz5Thqw2LxNKtEuOf3Fr6wYWAH3G7NnnMn9du+njAKmC6nCzXCUNqq24Oi50IHUAVmGlN7ZlP7UC2vitDNz8m9+/chOPeoqIgO7KxY0P6AMp6qOr2GeWUsKoK8GxCK59c7A26sAYADXIk4lLxIWGfUnbm8hftBn5VXXn9T9kL7yPeKyHio1FDJ5VA0WT312dfUnhK47JKVgn49tPIbEaLSrwPJ3GfgJrsv5RrapHcq/jQLZxLoLyG4FDxV0rtTIk6Npy3gbb66Md2E1+9VUoWJac9A84ar2SZP+DzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECA+ZZs/kvFgkgBCWJ3TanB6mjP2boan0jOQ+" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2017-11-04T23:59:59.0000000-07:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="60BBE28B0F46D6E3948D2437E00B36EB669A2855" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
 </ServiceConfiguration>

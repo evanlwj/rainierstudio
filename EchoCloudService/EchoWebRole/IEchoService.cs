@@ -14,6 +14,10 @@ namespace EchoWebRole
     {
 
         [OperationContract]
+        [WebGet(
+            UriTemplate = "data?v={value}",
+            ResponseFormat = WebMessageFormat.Json,
+            RequestFormat = WebMessageFormat.Json)]
         string GetData(int value);
 
         [OperationContract]
