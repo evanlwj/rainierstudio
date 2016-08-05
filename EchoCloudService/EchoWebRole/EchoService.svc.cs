@@ -12,9 +12,9 @@ namespace EchoWebRole
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class EchoService : IEchoService
     {
-        public string GetData(int value)
+        public string Ask(string question)
         {
-            return string.Format("You entered: {0}", value);
+            return string.Format("You asked: {0}", question);
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)

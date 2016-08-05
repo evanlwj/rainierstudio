@@ -15,10 +15,10 @@ namespace EchoWebRole
 
         [OperationContract]
         [WebGet(
-            UriTemplate = "data?v={value}",
+            UriTemplate = "ask?q={question}",
             ResponseFormat = WebMessageFormat.Json,
             RequestFormat = WebMessageFormat.Json)]
-        string GetData(int value);
+        string Ask(string question);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
